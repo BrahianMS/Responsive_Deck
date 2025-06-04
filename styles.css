@@ -4,35 +4,37 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: ;
-}
-
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 90vh;
+    overflow: hidden;
 }
 
 .aside {
-    margin: 20px;
-    border: 1px solid black;
+    margin: 0 auto;
+    background-color: #c1c1c1;
+    border-radius: 5px;
     display: inline-flex;
     flex-direction: column;
+    width: 70%;
+    height: 100%;
 }
 
 .cards {
     padding: 4px;
-    width: 200px;
+    width: 100%;
     background-color: #a2e8f5;
     box-shadow: 1px 1px 2px #bbbbbb;
     cursor: pointer;
 }
 
-.card {
+.item {
     background-color: #a2e8f5;
     color: black;
     padding: 4px;
     margin: 0;
-    width: 200px;
+    width: 100%;
     box-shadow: 1px 1px 2px #bbbbbb;
     text-decoration: none;
     display: flex;
@@ -41,45 +43,48 @@ body {
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+    display: grid;
+    grid-template-columns: 72vw;
     margin: 0 auto;
-}
-
-.category {
-    display: block;
-    border: 2px solid red;
-    padding: 20px;
+    overflow: scroll;
+    height: 100%;
+    background-color: antiquewhite;
+    border-radius: 5px;
 }
 
 .category__title {
     text-align: center;
     margin: 10px;
+    font-size: 7vh;
 }
 
-.category__pok {
+.category {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     height: 100%;
     justify-items: center;
+    row-gap: 20px;
 }
 
-.pok__card {
+.card {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid black;
+    border: 10px solid rgb(255, 219, 12);
+    border-radius: 5px;
     width: 250px;
     height: 350px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .pok__img {
     height: 70%;
 }
 
+.card__title {
+    font-size: 5vh;
+}
 
 .plant {
     background-color: rgb(147, 235, 147);
@@ -93,8 +98,33 @@ body {
     background-color: #69dbf0;
 }
 
+.card1 {
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+}
+
+.ygo__img {
+    height: 100%;
+    width: 100%;
+}
+
 @media (max-width: 480px) {
+
     .container {
-        flex-direction: column;
+        grid-template-columns: 90%;
+        grid-template-rows: 5% 5%;
+        gap: 20px;
+    }
+    .aside {
+        height: fit-content;
+    }
+    .content {
+        width: 90%;
+        overflow: scroll;
+    }
+    .category {
+        grid-template-columns: 100%;
     }
 }

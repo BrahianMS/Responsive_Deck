@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="container">
+    <header class="header">
         <nav>
             <ul>
                 <li></li>
@@ -21,86 +21,120 @@
             <h2>Buscar</h2>
             <details>
                 <summary class="cards">Pokémon</summary>
-                <a class="card" href="#Bulbasaur">Bulbasaur</a>
-                <a class="card" href="#Ivysaur">Ivysaur</a>
-                <a class="card" href="#Venusaur">Venusaur</a>
-                <a class="card" href="#Charmander">Charmander</a>
-                <a class="card" href="#Charmeleon">Charmeleon</a>
-                <a class="card" href="#Charizard">Charizard</a>
-                <a class="card" href="#Squirtle">Squirtle</a>
-                <a class="card" href="#Wartortle">Wartortle</a>
-                <a class="card" href="#Blastoise">Blastoise</a>
+                <a class="item" href="#Bulbasaur">Bulbasaur</a>
+                <a class="item" href="#Ivysaur">Ivysaur</a>
+                <a class="item" href="#Venusaur">Venusaur</a>
+                <a class="item" href="#Charmander">Charmander</a>
+                <a class="item" href="#Charmeleon">Charmeleon</a>
+                <a class="item" href="#Charizard">Charizard</a>
+                <a class="item" href="#Squirtle">Squirtle</a>
+                <a class="item" href="#Wartortle">Wartortle</a>
+                <a class="item" href="#Blastoise">Blastoise</a>
             </details>
             <details>
                 <summary class="cards">Yu-Gi-Oh!</summary>
-                <a class="card">1</a>
-                <a class="card">2</a>
-                <a class="card">3</a>
-                <a class="card">4</a>
-                <a class="card">5</a>
-                <a class="card">6</a>
+                <a class="item" href="#Obeliszo">Obelisco</a>
+                <a class="item" href="#Dragon_alado">Dragon alado</a>
+                <a class="item" href="#Slifer">Slifer</a>
+                <a class="item" href="#Brazo_der">Brazo derecho</a>
+                <a class="item" href="#Exodia">Exodia</a>
+                <a class="item" href="#Brazo_izq">Brazo izquierdo</a>
+                <a class="item" href="#Pierna_der">Pierna derecha</a>
+                <a class="item" href="#Pierna_izq">Pierna izquierda</a>
+                <a class="item" href="#Dragon_blanco">Dragon blanco</a>
+                <a class="item" href="#Mago">Mago oscuro</a>
             </details>
         </aside>
         <section class="content">
+            <h2 class="category__title">Pókemon</h2>
             <div class="category">
-                <h2 class="category__title">Pókemon</h2>
-                <div class="category__pok">
-                    <article class="pok__card plant" id="Bulbasaur">
-                        <img src="pokemon/Bulbasaur.png" alt="bulbasaur" class="pok__img">
-                        <h4 class="pok__title">Bulbasaur</h4>
-                        <p class="pok__inf">Pokémon de tipo planta/veneno introducido en la primera generación</p>
-                        <p>Evoluciona en <a href="#Ivysaur">Ivysaur</a> y <a href="#Venusaur">Venusaur</a></p>
-                    </article>
-                    <article class="pok__card plant" id="Ivysaur">
-                        <img src="pokemon/Ivysaur.png" alt="Ivysaur" class="pok__img">
-                        <h4 class="pok__title">Ivysaur</h4>
-                        <p class="pok__inf">Pokémon de tipo planta/veneno</p>
-                        <p>Es la evolución de <a href="#Bulbasaur">Bulbasaur</a>.</p>
-                    </article>
-                    <article class="pok__card plant" id="Venusaur">
-                        <img src="pokemon/Venusaur.png" alt="Venusaur" class="pok__img">
-                        <h4 class="pok__title">Venusaur</h4>
-                        <p class="pok__inf">Pokémon de tipo planta/veneno</p>
-                        <p>Es la evolución de <a href="#Ivysaur">Ivysaur</a>.</p>
-                    </article>
-                    <article class="pok__card fire" id="Charmander">
-                        <img src="pokemon/Charmander.png" alt="Charmander" class="pok__img">
-                        <h4 class="pok__title">Charmander</h4>
-                        <p class="pok__inf">Pokémon de tipo fuego</p>
-                        <p>Evoluciona en <a href="#Charmeleon">Charmeleon</a> y <a href="#Charizard">Charizard</a></p>
-                    </article>
-                    <article class="pok__card fire" id="Charmeleon">
-                        <img src="pokemon/Charmeleon.png" alt="Charmeleon" class="pok__img">
-                        <h4 class="pok__title">Charmeleon</h4>
-                        <p class="pok__inf">Pokémon de tipo fuego</p>
-                        <p>Es la evolución de <a href="#Charmander">Charmander</a></p>
-                    </article>
-                    <article class="pok__card fire" id="Charizard">
-                        <img src="pokemon/Charizard.png" alt="Charizard" class="pok__img">
-                        <h4 class="pok__title">Charizard</h4>
-                        <p class="pok__inf">Pokémon de tipo fuego/volador</p>
-                        <p>Es la evolución de <a href="#Charmeleon">Charmeleon</a></p>
-                    </article>
-                    <article class="pok__card water" id="Squirtle">
-                        <img src="pokemon/Squirtle.png" alt="Squirtle" class="pok__img">
-                        <h4 class="pok__title">Squirtle</h4>
-                        <p class="pok__inf">Pokémon de tipo agua</p>
-                        <p>Evoluciona en <a href="#Wartortle">Wartortle</a> y <a href="#Blastoise">Blastoise</a></p>
-                    </article>
-                    <article class="pok__card water" id="Wartortle">
-                        <img src="pokemon/Wartortle.png" alt="Wartortle" class="pok__img">
-                        <h4 class="pok__title">Wartortle</h4>
-                        <p class="pok__inf">Pokémon de tipo agua</p>
-                        <p>Es la evolución de <a href="#Squirtle">Squirtle</a></p>
-                    </article>
-                    <article class="pok__card water" id="Blastoise">
-                        <img src="pokemon/Blastoise.png" alt="Blastoise" class="pok__img">
-                        <h4 class="pok__title">Blastoise</h4>
-                        <p class="pok__inf">Pokémon de tipo agua</p>
-                        <p>Es la evolución de <a href="#Wartortle">Wartortle</p>
-                    </article>
-                </div>
+                <article class="card plant" id="Bulbasaur">
+                    <img src="pokemon/Bulbasaur.png" alt="bulbasaur" class="pok__img">
+                    <h4 class="card__title">Bulbasaur</h4>
+                    <p class="card__inf">Pokémon de tipo planta/veneno</p>
+                    <p>Evoluciona en <a href="#Ivysaur">Ivysaur</a> y <a href="#Venusaur">Venusaur</a></p>
+                </article>
+                <article class="card plant" id="Ivysaur">
+                    <img src="pokemon/Ivysaur.png" alt="Ivysaur" class="pok__img">
+                    <h4 class="card__title">Ivysaur</h4>
+                    <p class="card__inf">Pokémon de tipo planta/veneno</p>
+                    <p>Es la evolución de <a href="#Bulbasaur">Bulbasaur</a>.</p>
+                </article>
+                <article class="card plant" id="Venusaur">
+                    <img src="pokemon/Venusaur.png" alt="Venusaur" class="pok__img">
+                    <h4 class="card__title">Venusaur</h4>
+                    <p class="card__inf">Pokémon de tipo planta/veneno</p>
+                    <p>Es la evolución de <a href="#Ivysaur">Ivysaur</a>.</p>
+                </article>
+                <article class="card fire" id="Charmander">
+                    <img src="pokemon/Charmander.png" alt="Charmander" class="pok__img">
+                    <h4 class="card__title">Charmander</h4>
+                    <p class="card__inf">Pokémon de tipo fuego</p>
+                    <p>Evoluciona en <a href="#Charmeleon">Charmeleon</a> y <a href="#Charizard">Charizard</a></p>
+                </article>
+                <article class="card fire" id="Charmeleon">
+                    <img src="pokemon/Charmeleon.png" alt="Charmeleon" class="pok__img">
+                    <h4 class="card__title">Charmeleon</h4>
+                    <p class="card__inf">Pokémon de tipo fuego</p>
+                    <p>Es la evolución de <a href="#Charmander">Charmander</a></p>
+                </article>
+                <article class="card fire" id="Charizard">
+                    <img src="pokemon/Charizard.png" alt="Charizard" class="pok__img">
+                    <h4 class="card__title">Charizard</h4>
+                    <p class="card__inf">Pokémon de tipo fuego/volador</p>
+                    <p>Es la evolución de <a href="#Charmeleon">Charmeleon</a></p>
+                </article>
+                <article class="card water" id="Squirtle">
+                    <img src="pokemon/Squirtle.png" alt="Squirtle" class="pok__img">
+                    <h4 class="card__title">Squirtle</h4>
+                    <p class="card__inf">Pokémon de tipo agua</p>
+                    <p>Evoluciona en <a href="#Wartortle">Wartortle</a> y <a href="#Blastoise">Blastoise</a></p>
+                </article>
+                <article class="card water" id="Wartortle">
+                    <img src="pokemon/Wartortle.png" alt="Wartortle" class="pok__img">
+                    <h4 class="card__title">Wartortle</h4>
+                    <p class="card__inf">Pokémon de tipo agua</p>
+                    <p>Es la evolución de <a href="#Squirtle">Squirtle</a></p>
+                </article>
+                <article class="card water" id="Blastoise">
+                    <img src="pokemon/Blastoise.png" alt="Blastoise" class="pok__img">
+                    <h4 class="card__title">Blastoise</h4>
+                    <p class="card__inf">Pokémon de tipo agua</p>
+                    <p>Es la evolución de <a href="#Wartortle">Wartortle</a></p>
+                </article>
             </div>
+            <h2 class="category__title">Yu-Gi-Oh!</h2>
+            <div class="category">
+                <article class="card1" id="Obelisco">
+                    <img src="yugioh/Obelisco.webp" alt="Obelisco el Atormentador" class="ygo__img">
+                </article>
+                <article class="card1" id="Dragon_alado">
+                    <img src="yugioh/Dragon_alado.webp" alt="El Dragón Alado de Ra" class="ygo__img">
+                </article>
+                <article class="card1" id="Slifer">
+                    <img src="yugioh/Slifer.webp" alt="Slifer el Dragón del Cielo" class="ygo__img">
+                </article>
+                <article class="card1" id="Brazo_der">
+                    <img src="yugioh/Brazo_derecho_del_prohibido.webp" alt="Brazo derecho del prohibido" class="ygo__img">
+                </article>
+                <article class="card1" id="Exodia">
+                    <img src="yugioh/Exodia_el_prohibido.webp" alt="Exodia el prohibido" class="ygo__img">
+                </article>
+                <article class="card1" id="Brazo_izq">
+                    <img src="yugioh/Brazo_izquierdo_del_prohibido.webp" alt="Brazo izquierdo del prohibido" class="ygo__img">
+                </article>
+                <article class="card1" id="Pierna_der">
+                    <img src="yugioh/Pierna_derecha_del_prohibido.webp" alt="Pierna derecha del prohibido" class="ygo__img">
+                </article>
+                <article class="card1" id="Dragon_blanco">
+                    <img src="yugioh/Dragon_blanco_de_ojos_azules.webp" alt="Dragon blanco de ojos azules" class="ygo__img">
+                </article>
+                <article class="card1" id="Pierna_izq">
+                    <img src="yugioh/Pierna_izquierda_del_prohibido.webp" alt="Pierna izquierda del prohibido" class="ygo__img">
+                </article>
+                <article class="card1" id="Mago">
+                    <img src="yugioh/Mago_oscuro.webp" alt="Mago oscuro" class="ygo__img">
+                </article>
         </section>
     </main>
 </body>
