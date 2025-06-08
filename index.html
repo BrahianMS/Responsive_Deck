@@ -8,11 +8,11 @@
 </head>
 <body>
     <header class="header">
+        <h1>Game-Cards</h1>
         <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="nav__ul">
+                <li class="nav__li"><a class="li__link" href="https://www.pokemon.com/el/pokedex">Pokédex</a></li>
+                <li class="nav__li"><a class="li__link" href="https://www.yugioh.com/cards">Yu-Gi-Oh!</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +47,7 @@
         </aside>
         <section class="content">
             <h2 class="category__title">Pókemon</h2>
-            <div class="category">
+            <section class="category">
                 <article class="card plant" id="Bulbasaur">
                     <img src="pokemon/Bulbasaur.png" alt="bulbasaur" class="pok__img">
                     <h4 class="card__title">Bulbasaur</h4>
@@ -102,9 +102,9 @@
                     <p class="card__inf">Pokémon de tipo agua</p>
                     <p>Es la evolución de <a href="#Wartortle">Wartortle</a></p>
                 </article>
-            </div>
+            </section>
             <h2 class="category__title">Yu-Gi-Oh!</h2>
-            <div class="category">
+            <section class="category">
                 <article class="card1" id="Obelisco">
                     <img src="yugioh/Obelisco.webp" alt="Obelisco el Atormentador" class="ygo__img">
                 </article>
@@ -135,6 +135,7 @@
                 <article class="card1" id="Mago">
                     <img src="yugioh/Mago_oscuro.webp" alt="Mago oscuro" class="ygo__img">
                 </article>
+            </section>
         </section>
     </main>
 </body>
